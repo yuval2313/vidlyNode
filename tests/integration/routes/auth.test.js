@@ -2,7 +2,7 @@ const request = require('supertest');
 const bcrypt = require('bcrypt');
 const {User} = require('../../../models/user');
 
-let endpoint = '/vidly/api/auth';
+let endpoint = '/api/auth';
 let server;
 
 describe(endpoint , () => {

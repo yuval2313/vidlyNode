@@ -6,7 +6,7 @@ const {Rental} = require('../../../models/rental');
 const mongoose = require('mongoose');
 
 let server;
-let endpoint = '/vidly/api/returns';
+let endpoint = '/api/returns';
 
 describe(endpoint , () => {
     jest.setTimeout(30000);

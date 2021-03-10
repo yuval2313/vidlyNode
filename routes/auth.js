@@ -1,4 +1,4 @@
-const Joi = require('Joi');
+const Joi = require('joi');
 const bcrypt = require('bcrypt');
 
 const express = require('express');

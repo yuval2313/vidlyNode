@@ -2,7 +2,7 @@ const request = require('supertest');
 const {User} = require('../../../models/user');
 const {Genre} = require('../../../models/genre');
 let server;
-let endpoint = '/vidly/api/genres';
+let endpoint = '/api/genres';
 
 describe('auth middleware' , () => {
     jest.setTimeout(30000);
