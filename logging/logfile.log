@@ -2177,3 +2177,5 @@
 {"level":"info","message":"Connected to mongodb+srv://YuvalL:Dashinho1234@cluster0.wnu1b.mongodb.net/vidly_test Successfully!","metadata":{},"timestamp":"Wed Mar 10 2021 21:22:14 GMT+0200 (Israel Standard Time)"}
 {"level":"info","message":"listening on port 3000...","metadata":{},"timestamp":"Wed Mar 10 2021 21:22:42 GMT+0200 (Israel Standard Time)"}
 {"level":"info","message":"Connected to mongodb+srv://YuvalL:Dashinho1234@cluster0.wnu1b.mongodb.net/vidly Successfully!","metadata":{},"timestamp":"Wed Mar 10 2021 21:22:43 GMT+0200 (Israel Standard Time)"}
+{"level":"info","message":"listening on port 3000...","metadata":{},"timestamp":"Wed Mar 10 2021 23:53:28 GMT+0200 (Israel Standard Time)"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly Successfully!","metadata":{},"timestamp":"Wed Mar 10 2021 23:53:28 GMT+0200 (Israel Standard Time)"}
