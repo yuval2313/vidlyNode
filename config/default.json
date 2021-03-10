@@ -1,4 +1,4 @@
 {
     "jwtPrivateKey": "",
-    "dbURL": "mongodb://localhost/vidly"
+    "dbURL": ""
 }
