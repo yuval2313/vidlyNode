@@ -27,7 +27,7 @@ describe('auth middleware' , () => {
         next = jest.fn();
     });
 
-    it('should populate req.body with the decoded payload' , () => {
+    it('should populate req.user with the decoded payload' , () => {
         auth(req, res, next);
 
         expect(req.user).toMatchObject(payload);
