@@ -2292,3 +2292,11 @@
 {"level":"info","message":"Connected to mongodb://localhost/vidly Successfully!","metadata":{},"timestamp":"Sun Jul 11 2021 18:34:12 GMT+0300 (Israel Daylight Time)"}
 {"level":"info","message":"listening on port 3900...","metadata":{},"timestamp":"Sun Jul 11 2021 18:35:57 GMT+0300 (Israel Daylight Time)"}
 {"level":"info","message":"Connected to mongodb://localhost/vidly Successfully!","metadata":{},"timestamp":"Sun Jul 11 2021 18:35:57 GMT+0300 (Israel Daylight Time)"}
+{"level":"info","message":"listening on port 3900...","metadata":{},"timestamp":"Sun Jul 11 2021 19:02:55 GMT+0300 (Israel Daylight Time)"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly Successfully!","metadata":{},"timestamp":"Sun Jul 11 2021 19:02:55 GMT+0300 (Israel Daylight Time)"}
+{"level":"error","message":"Error Message: Cannot read property '_id' of null","metadata":{"stack":"TypeError: Cannot read property '_id' of null\n    at C:\\Users\\user\\Desktop\\Programming\\React.js\\vidlyNode\\routes\\movies.js:19:18\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"},"timestamp":"Sun Jul 11 2021 20:15:00 GMT+0300 (Israel Daylight Time)"}
+{"level":"info","message":"listening on port 3900...","metadata":{},"timestamp":"Sun Jul 11 2021 20:15:48 GMT+0300 (Israel Daylight Time)"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly Successfully!","metadata":{},"timestamp":"Sun Jul 11 2021 20:15:48 GMT+0300 (Israel Daylight Time)"}
+{"level":"error","message":"Error Message: Cannot read property '_id' of null","metadata":{"stack":"TypeError: Cannot read property '_id' of null\n    at C:\\Users\\user\\Desktop\\Programming\\React.js\\vidlyNode\\routes\\movies.js:19:18\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"},"timestamp":"Sun Jul 11 2021 20:16:00 GMT+0300 (Israel Daylight Time)"}
+{"level":"info","message":"listening on port 3900...","metadata":{},"timestamp":"Sun Jul 11 2021 20:35:19 GMT+0300 (Israel Daylight Time)"}
+{"level":"info","message":"Connected to mongodb://localhost/vidly Successfully!","metadata":{},"timestamp":"Sun Jul 11 2021 20:35:19 GMT+0300 (Israel Daylight Time)"}
