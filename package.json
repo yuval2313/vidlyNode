@@ -25,6 +25,7 @@
     "compression": "^1.7.4",
     "concurrently": "^6.0.0",
     "config": "^1.31.0",
+    "cors": "^2.8.5",
     "debug": "^4.3.1",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
