@@ -67,7 +67,7 @@ router.put(
     if (!movie)
       return res.status(404).send("The Movie with the given ID was not found!");
 
-    res.send("Movie was updated successfully! \n" + movie);
+    res.send(movie);
   }
 );
 
@@ -76,7 +76,7 @@ router.delete("/:id", [auth, admin, validateObjectId], async (req, res) => {
   if (!movie)
     return res.status(404).send("The Movie with the given ID was not found!");
 
-  res.send("Movie was deleted successfully! \n" + movie);
+  res.send(movie);
 });
 
 module.exports = router;
