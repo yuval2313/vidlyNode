@@ -10,20 +10,16 @@ const validateObjectId = require("../middleware/validateObjectId");
 
 const { Rental } = require("../models/rental");
 const { Movie } = require("../models/movie");
-// const { Customer } = require("../models/customer");
 
 router.post("/", [auth, validation(returnValidation)], async (req, res) => {
   let rental = await Rental.lookUpActiveRental(
     req.body.movieId,
     req.body.customerId
   );
-  //   let customer = await Customer.findById(req.body.customerId);
 
   if (!rental) return res.status(404).send("No rental found!");
 
   rental.returnRental();
-
-  //   if (customer && customer.isGold) rental.goldDiscount();
 
   await mongoose.connection.transaction(async (session) => {
     await rental.save({ session });
@@ -39,7 +35,6 @@ router.post("/", [auth, validation(returnValidation)], async (req, res) => {
 
 router.post("/:id", [auth, validateObjectId], async (req, res) => {
   let rental = await Rental.findById(req.params.id);
-  //   let customer = await Customer.findById(req.body.customerId);
 
   if (!rental)
     return res.status(404).send("Rental with the given ID was not found");
@@ -48,8 +43,6 @@ router.post("/:id", [auth, validateObjectId], async (req, res) => {
     return res.status(400).send("Rental has already been returned!");
 
   rental.returnRental();
-
-  //   if (customer && customer.isGold) rental.goldDiscount();
 
   await mongoose.connection.transaction(async (session) => {
     await rental.save({ session });

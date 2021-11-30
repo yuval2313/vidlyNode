@@ -1,18 +1,6 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
-// Date.prototype.addDays = function(days) {
-//     let date = new Date(this.valueOf());
-//     date.setDate(date.getDate() + days);
-//     return date;
-// }
-
-// Date.prototype.minusDays = function(days) {
-//     let date = new Date(this.valueOf());
-//     date.setDate(date.getDate() - days);
-//     return date;
-// }
-
 const rentalSchema = new mongoose.Schema({
   movie: {
     type: new mongoose.Schema({
@@ -65,6 +53,11 @@ const rentalSchema = new mongoose.Schema({
     get: (v) => Math.round(v),
     set: (v) => Math.round(v),
   },
+  priceAfterDiscount: {
+    type: Number,
+    get: (v) => Math.round(v),
+    set: (v) => Math.round(v),
+  },
 });
 
 rentalSchema.statics.lookUpActiveRental = function (movieId, customerId) {
@@ -84,12 +77,10 @@ rentalSchema.methods.returnRental = function () {
 
   if (daysPassed === 0) daysPassed = 1;
 
-  this.price = this.movie.dailyRentalRate * daysPassed;
-};
+  this.set({ price: this.movie.dailyRentalRate * daysPassed });
 
-// rentalSchema.methods.goldDiscount = function () {
-//   if (this.returnDate && this.price) this.price = this.price * 0.9;
-// };
+  if (this.customer.isGold) this.set({ priceAfterDiscount: this.price * 0.85 });
+};
 
 const Rental = mongoose.model("Rental", rentalSchema);
 
